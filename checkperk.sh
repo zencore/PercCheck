@@ -34,7 +34,7 @@ fi
 CONTROLLER=${1:-0}
 
 # Check for Critical
-CRIT=$($OMREPORT storage pdisk controller=$CONTROLLER | grep -c '^Status.*Critical')
+CRIT=$($OMREPORT storage pdisk controller=$CONTROLLER | grep -c '^Status.*\sCritical')
 
 if [ $CRIT -gt 0 ]; then
     echo "PERC CRITICAL: One or more disks needs IMMEDIATE replacing"
