@@ -12,10 +12,10 @@ checkperc.sh [controller]
 Check the RAID status of a Poweredge Raid Controller (PERC) controlled array.
 The exit value of this script complies to the nagios/sensu specifications: 
 
-0. all physical drives are "Ok" 
-1. one or more drives are "Non-Critical"
-2. one or more drives are "Critical"
-3. unknown error
+* *0*: all physical drives are "Ok" 
+* *1*: one or more drives are "Non-Critical"
+* *2*: one or more drives are "Critical"
+* *3*: unknown error
 
 By default controller "0" is used unless a different one is supplied in
 _[controller]_
