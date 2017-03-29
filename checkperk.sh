@@ -24,7 +24,6 @@
 OMREPORT="/opt/dell/srvadmin/bin/omreport"
 
 # Make sure the 'omreport' command exists and is executable. If not, exit 3
-CRIT=$($OMREPORT storage pdisk controller=$CONTROLLER | grep -c '^Status.*Critical')
 if [ ! -x  $OMREPORT ] ; then
     echo "'omreport' not found, or is not executable."
     exit 3
