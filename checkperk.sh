@@ -60,5 +60,5 @@ if [ $OK == $NUMDISK ]; then
 fi
 
 # How on earth did we end up here?
-echo "Unexpexted end of script reached. Something is wrong"
+echo "Unexpected end of script reached. Something is wrong"
 exit 3
